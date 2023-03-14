@@ -31,7 +31,7 @@ const Test = () => {
         } else {
             const _type = QuestionList[no]["type"];
             const newMbtiScore = mbtiScore.map((s) => 
-                s.id === _type? {id: s.id, score: s.score + 1} : s
+                s.id === _type? {id: s.id, score: s.score + _score} : s
             );
             setMbtiScore(newMbtiScore);
         }
